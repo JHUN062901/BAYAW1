@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Quiz App</title>
+    <style>
+        /* Ensure modals are hidden initially */
+        #settings-modal, #about-modal {
+            display: none; /* Hide by default */
+        }
+    </style>
+</head>
 <body>
-
 <div class="background"></div>
 <div id="intro-container" class="intro-container">
     <h1>BAYAW STUDY TOOL</h1>
@@ -12,14 +24,15 @@
 </div>
 
 <footer>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <link rel="stylesheet" href="src/css/style.css">
-      <button id="home-btn" class="home-button">
-        <i class="fas fa-home"></i> 
-      <button id="settings-btn" class="settings-btn">
+    <button id="home-btn" class="home-button">
+        <i class="fas fa-home"></i>
+    </button>
+    <button id="settings-btn" class="settings-btn">
         <i class="fas fa-cog"></i>
-      <button id="about-btn" class="about-btn">
+    </button>
+    <button id="about-btn" class="about-btn">
         <i class="fas fa-info-circle"></i>
+    </button>
 </footer>
 
 <div id="quiz-container" class="quiz-container hidden">
@@ -62,29 +75,26 @@
 <!-- About Section -->
 <div id="about-modal" class="about-modal">
     <div class="about-modal-content">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="src/css/style.css">
         <span class="close">&times;</span>
         <div class="about-modal-header">
             <h2>About</h2>
         </div>
-        <p>This app is a passion project designed by JHUN to help you learn and master key terms and definitions relevant to the licensure exam.
+        <p>This app is a passion project designed by JHUN to help you learn and master key terms and definitions relevant to the licensure exam.</p>
         <p>We've compiled a vast collection of terms and definitions based on reliable sources like PAES/PNS and reputable review materials.</p>
         <p>DISCLAIMER: All the information within the app is carefully curated from publicly available resources. I don't intend to monetize nor sell this app.</p>
         <p>Creator: Jhunly D. Tapaya</p>
         <a href="https://www.facebook.com/J00N.x" target="_blank" class="social-icon facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
-            <a href="mailto:example@example.com" class="social-icon email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://https://t.me/+w7adj8Kc1Qs2OTBl" target="_blank" class="social-icon telegram">
-                <i class="fab fa-telegram"></i>
-            
+        <a href="mailto:example@example.com" class="social-icon email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://t.me/+w7adj8Kc1Qs2OTBl" target="_blank" class="social-icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
     </div>
 </div>
 
-<script src="src/js/main.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
